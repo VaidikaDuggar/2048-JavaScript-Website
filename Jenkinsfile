@@ -30,7 +30,7 @@ pipeline {
     }
 
     environment {
-        GITHUB_TOKEN = credentials('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')
+        GITHUB_TOKEN = credentials('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')
     }
 
     post {
