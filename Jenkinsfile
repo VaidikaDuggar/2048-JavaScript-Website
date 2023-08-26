@@ -29,15 +29,13 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            node {
-                cleanWs()
-            }
-        }
-    }
-    
     environment {
         GITHUB_TOKEN = credentials('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')
     }
-}
+
+    post {
+        always {
+            cleanWs()
+        }
+    }
+} check this
