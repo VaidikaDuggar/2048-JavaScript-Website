@@ -30,7 +30,7 @@ pipeline {
             steps {
                 script {
                     // Use the GITHUB_TOKEN variable to access the token value
-                    withCredentials([string(variable: 'GITHUB_TOKEN', credentialsId: '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')]) {
+                    withCredentials([string(variable: 'GITHUB_TOKEN', credentialsId: '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')]) {
                         // Replace with your deployment commands (copy files, push to GitHub Pages, etc.)
                         // For GitHub Pages deployment example:
                         sh 'git checkout gh-pages'
